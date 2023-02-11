@@ -5,14 +5,11 @@ RUN set -ex; \
     apt-get update; \
     apt-get install -y \
       bash \
-      fluxbox \
-      git \
-      net-tools \
+      openbox \
       novnc \
       supervisor \
-      x11vnc \
-      xterm \
-      xvfb
+      tigervnc-standalone-server \
+      xterm
 
 # Setup demo environment variables
 ENV HOME=/root \
